@@ -8,10 +8,24 @@
 
 > 说明：Codex 通常从 `$CODEX_HOME/skills/` 读取 skills。若你没有设置 `$CODEX_HOME`，一般默认在 `~/.codex/`。
 
-1) 克隆仓库（或下载 ZIP 解压）：
+### 方式 A：用 Codex 自带的 Skill Installer（最省事）
+
+如果你的环境里有系统 skill `skill-installer`，可以直接从 GitHub 安装指定路径：
 
 ```bash
-git clone <YOUR_REPO_URL> ~/chuanchuan-skill
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo qiangu/chuanchuan-skill \
+  --path skills/pmp-jijian-project-management
+```
+
+安装后重启 Codex 以加载新 skills。
+
+### 方式 B：git clone + rsync（通用）
+
+1) 克隆仓库（私有仓库建议用 SSH；或下载 ZIP 解压）：
+
+```bash
+git clone git@github.com:qiangu/chuanchuan-skill.git ~/chuanchuan-skill
 ```
 
 2) 拷贝/同步到 Codex skills 目录：
