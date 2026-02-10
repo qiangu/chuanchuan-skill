@@ -2,11 +2,40 @@
 
 个人技能仓库（Codex Skills）。当前包含 1 个 skill：
 
-- `pmp-jijian-project-management`：将《极简项目管理》的核心框架（五大过程组 + “如来十掌”）沉淀为可直接复用的项目交付物与模板（任务书/相关方/三落实+RACI/WBS/里程碑/风险/状态报告/变更九步法/收尾与经验教训）。
+- `pmp-jijian-project-management`：将《极简项目管理》的核心框架（五大过程组 + "如来十掌"）沉淀为可直接复用的项目交付物与模板（任务书/相关方/三落实+RACI/WBS/里程碑/风险/状态报告/变更九步法/收尾与经验教训）。
 
-## 安装（推荐）
+---
 
-> 说明：Codex 通常从 `$CODEX_HOME/skills/` 读取 skills。若你没有设置 `$CODEX_HOME`，一般默认在 `~/.codex/`。
+## 🚀 一键安装（推荐）
+
+最简单的方式，复制粘贴执行即可：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/qiangu/chuanchuan-skill/main/install-pmp.sh | bash
+```
+
+或下载 ZIP 手动安装：
+
+```bash
+# 下载并解压
+curl -fsSL https://github.com/qiangu/chuanchuan-skill/archive/refs/heads/main.zip -o chuanchuan-skill.zip
+unzip -q chuanchuan-skill.zip
+
+# 安装 skill
+mkdir -p ~/.openclaw/skills
+rsync -a --delete \
+  chuanchuan-skill-main/skills/pmp-jijian-project-management/ \
+  ~/.openclaw/skills/pmp-jijian-project-management/
+
+# 清理
+cd chuanchuan-skill-main && rm -rf ../chuanchuan-skill.zip
+```
+
+---
+
+## 安装（其他方式）
+
+> 说明：Codex 通常从 `$CODEX_HOME/skills/` 读取 skills。若你没有设置 `$CODEX_HOME`，一般默认在 `~/.codex/` 或 `~/.openclaw/`。
 
 ### 方式 A：用 Codex 自带的 Skill Installer（最省事）
 
@@ -56,7 +85,7 @@ cd ~/chuanchuan-skill
 git pull
 ```
 
-2) 重新同步到 Codex skills 目录（同“安装”第 2 步）。
+2) 重新同步到 Codex skills 目录（同"安装"第 2 步）。
 
 ## 发布到 GitHub（首次）
 
