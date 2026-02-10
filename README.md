@@ -44,6 +44,18 @@ git pull
 
 2) 重新同步到 Codex skills 目录（同“安装”第 2 步）。
 
+## 发布到 GitHub（首次）
+
+由于不同账号/组织、公开性（public/private）选择不同，推荐你先在 GitHub 网页创建一个空仓库（不要勾选初始化 README / .gitignore / License），仓库名建议：`chuanchuan-skill`。
+
+创建后，在本地执行：
+
+```bash
+cd ~/chuanchuan-skill
+git remote add origin git@github.com:<YOUR_GITHUB_USERNAME_OR_ORG>/chuanchuan-skill.git
+git push -u origin main
+```
+
 ## 仓库结构
 
 ```text
@@ -55,4 +67,3 @@ git pull
         ├── references/*.md
         └── scripts/init_project_pack.py
 ```
-
