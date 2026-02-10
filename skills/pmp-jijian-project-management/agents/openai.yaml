@@ -1,0 +1,4 @@
+interface:
+  display_name: "极简项目管理（PMP）"
+  short_description: "五大过程组+如来十掌：落地项目，复用成功"
+  default_prompt: "Use $pmp-jijian-project-management to 用《极简项目管理》的方法为我输出项目任务书、WBS、里程碑计划、风险与变更机制。"
