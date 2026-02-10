@@ -1,6 +1,10 @@
 # chuanchuan-skill
 
-个人技能仓库（Codex Skills）。当前包含 1 个 skill：
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+个人技能仓库（Codex Skills），开源共享给社区使用。
+
+当前包含 1 个 skill：
 
 - `pmp-jijian-project-management`：将《极简项目管理》的核心框架（五大过程组 + "如来十掌"）沉淀为可直接复用的项目交付物与模板（任务书/相关方/三落实+RACI/WBS/里程碑/风险/状态报告/变更九步法/收尾与经验教训）。
 
@@ -103,6 +107,9 @@ git push -u origin main
 
 ```text
 .
+├── LICENSE                       # MIT 开源许可证
+├── CONTRIBUTING.md               # 贡献指南
+├── install-pmp.sh               # 一键安装脚本
 └── skills/
     └── pmp-jijian-project-management/
         ├── SKILL.md
@@ -110,3 +117,19 @@ git push -u origin main
         ├── references/*.md
         └── scripts/init_project_pack.py
 ```
+
+---
+
+## 开源协议
+
+本项目采用 [MIT 许可证](LICENSE) 开源。
+
+你可以自由使用、修改、分发本项目的代码，包括商业用途。
+
+## 贡献
+
+欢迎贡献！请阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 了解如何参与。
+
+## Star History
+
+如果这个项目对你有帮助，请给我们一个 ⭐️ Star！
